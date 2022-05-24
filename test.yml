@@ -5,6 +5,6 @@ metadata:
  lables:
   app: myapp
 spec:
-  container: 
-    - name: nignx
-      image: nginx
+ container: 
+  - name: nignx
+    image: nginx
