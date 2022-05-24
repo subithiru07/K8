@@ -1,18 +1,19 @@
 apiveersion: app/v1
 kind: ReplicaSet
-Metadata:
- namee: myapp-replicaset
+metadata:
+ name: myapp-replicaset
  lables:
   app: myapp
  specs :
    selectors:
-     env: production
+     matcLables:
+      app: myapp
    replicas: 3
    templates:
      metadata:
        name: nginx-2
        lables: 
-         env: production
+         app: myapp
     spec:
       container: 
         - name: nignx
